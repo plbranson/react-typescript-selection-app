@@ -14,4 +14,12 @@
  * limitations under the License.
  */
 
-import("./components/App");
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App {
+  font-size: 3rem;
+  max-width: 800px;
+  margin: 20px auto auto;
+}

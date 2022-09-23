@@ -1,6 +1,8 @@
 {
-  "name": ".",
+  "name": "react-typescript-selection-app",
   "version": "1.0.0",
+  "description": "React TypeScript Selection App",
+  "main": "webpack.config.js",
   "scripts": {
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
@@ -8,10 +10,28 @@
     "start": "webpack serve --open --mode development",
     "start:live": "webpack serve --open --mode development --live-reload --hot"
   },
-  "license": "MIT",
-  "author": {
-    "name": "Jack Herrington",
-    "email": "jherr@pobox.com"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plbranson/react-typescript-selection-app.git"
+  },
+  "keywords": [
+    "node",
+    "nodejs",
+    "react",
+    "react-dom",
+    "eslint",
+    "prettier",
+    "typescript"
+  ],
+  "author": "Patrick L. Branson",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/plbranson/react-typescript-selection-app/issues"
+  },
+  "homepage": "https://github.com/plbranson/react-typescript-selection-app#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
@@ -32,9 +52,5 @@
     "webpack": "^5.57.1",
     "webpack-cli": "^4.9.0",
     "webpack-dev-server": "^4.3.1"
-  },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
   }
 }
