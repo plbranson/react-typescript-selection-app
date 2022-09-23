@@ -15,16 +15,24 @@
  */
 
 import React from 'react'
-import ReactDOM from "react-dom";
+import ReactDOM from 'react-dom'
 
-import "./App.css";
+import './App.css'
 
-const App = () => (
-  <div className="App">
-    <div>Name: .</div>
-    <div>Framework: react</div>
-    <div>Language: TypeScript</div>
-    <div>CSS: Empty CSS</div>
-  </div>
-);
-ReactDOM.render(<App />, document.getElementById("app"));
+const App = () => {
+  return (
+    <div className="App">
+      <div>Name: .</div>
+      <div>Framework: react</div>
+      <div>Language: TypeScript</div>
+      <div>CSS: Empty CSS</div>
+    </div>
+  )
+}
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App/>
+  </React.StrictMode>,
+  document.getElementById('app'),
+)
