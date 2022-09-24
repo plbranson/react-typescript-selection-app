@@ -14,25 +14,44 @@
  * limitations under the License.
  */
 
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
 
-import './App.css'
+import Select, { SelectOption } from './select';
+
+const options = [
+  { label: 'First', value: 1 },
+  { label: 'Second', value: 2 },
+  { label: 'Third', value: 3 },
+  { label: 'Forth', value: 4 },
+  { label: 'Fifth', value: 5 }
+];
 
 const App = () => {
+  const [value1, setValue1] = useState<SelectOption[]>([options[0]]);
+  const [value2, setValue2] = useState<SelectOption | undefined>(options[0]);
+
   return (
-    <div className="App">
-      <div>Name: .</div>
-      <div>Framework: react</div>
-      <div>Language: TypeScript</div>
-      <div>CSS: Empty CSS</div>
-    </div>
-  )
-}
+    <>
+      <Select
+        multiple
+        options={options}
+        value={value1}
+        onChange={opt => setValue1(opt)}
+      />
+      <br />
+      <Select
+        options={options}
+        value={value2}
+        onChange={opt => setValue2(opt)}
+      />
+    </>
+  );
+};
 
 ReactDOM.render(
   <React.StrictMode>
-    <App/>
+    <App />
   </React.StrictMode>,
-  document.getElementById('app'),
-)
+  document.getElementById('app')
+);

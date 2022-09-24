@@ -14,4 +14,4 @@
  * limitations under the License.
  */
 
-import('./components/App')
+import('./components/App');

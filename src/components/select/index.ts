@@ -14,12 +14,8 @@
  * limitations under the License.
  */
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+import Select from './Select';
+import { SelectOption } from './Select';
 
-.App {
-  font-size: 3rem;
-  max-width: 800px;
-  margin: 20px auto auto;
-}
+export default Select;
+export type { SelectOption };
